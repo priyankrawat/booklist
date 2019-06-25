@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <style type="text/css">
+    
+    footer {
+    
+    
+    font-size: 20px;
+    bottom: 0;
+    
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+  </style>
+  <title>Book List</title>
+</head>
+<body>
+  <header class="bg-secondary p-4 mb-3">
+    <h1 class="display-4 text-center">
+      <i class="fas fa-book-open text-primary "></i><u>    MyBookList</u></h1>
+
+  </header>
+      <div class="container mt-4">
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN#</label>
+          <input type="text" id="isbn" class="form-control">
+        </div>
+        <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN#</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+  </div>
+  <footer class="bg-secondary p-1 mb-1">
+  <p>
+    Created with <i class="fa fa-heart"></i> by
+    <a href="http://priyank.ueuo.com">Priyank Rawat</a>
+    
+  </p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
